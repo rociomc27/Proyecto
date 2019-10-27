@@ -34,6 +34,10 @@ form2{
     text-align: center;
 }
 
+#inicio_sesion{
+	font-family: Agency FB;
+	font-size: 20px;
+}
 
 .marco2 {
 	display: grid;
