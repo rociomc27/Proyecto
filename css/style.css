@@ -1,28 +1,41 @@
 
-header{
+#header_index{
 
 	font-family: Agency FB;
-	font-size: 30px;
+	font-size: 50px;
+	font-style: italic;
 	color:white;
+	text-align: center;
 }
-body{
+#body_index{
 	background-image: url("../imagen/amanecer.jpg.jpg");
 	background-position: 100%;
 	background-repeat: no-repeat;
 
 	}
-.main_frame{
+.main_frame2{
 	text-align: center;
 	width:100%;
 	color:white;
 
 }
-form{
+form2{
 	display:inline-block;
 	text-align:left;
 }
 
-.marco {
+#form_index{
+	margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid #CCC;
+    border-radius: 1em;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.marco2 {
 	display: grid;
 	grid-template-columns: 40px 250px;
 	grid-row-gap: 10px;
@@ -33,14 +46,27 @@ form{
 		margin-top: 100%;
 		margin-right: 60%;
 		position: relative;
-		
-		
+			
 	}
-input[type=submit]{
+
+	#caja_index{
+	font-size: 22px;
+	font-family: Agency FB;
+	}
+
+#enlace_registrarse{
+	font-family: Agency FB;
+	color: white;
+	font-size: 30px;
+	padding-left: 50px;
+
+}
+
+input2[type=submit]{
 	grid-column: 1/span 2;
 	width: 100px;
 }
-header {
+header2 {
 	position: relative;
 	background-color: silver;
 	background-size: 50px;
