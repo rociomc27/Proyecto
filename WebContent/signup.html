@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+        <style>
+        * {
+            margin: 5px;
+        }
+
+        fieldset
+{
+    text-align:left;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+body
+{
+    text-align:center;
+    vertical-align:middle;
+}
+form {
+    width: 400px;
+    font: normal bold 12px Verdana, Arial;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+}
+
+form input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+  <fieldset>
+  <legend> <h1>Formulario de registro</h1> </legend>
+   <form id="miFormulario" action="" oninput="range_control_value.value= range_control.valueAdNumber">
+   Nombre: <input type="text" name="name_control" autofocus required />
+   <br>Apellidos: <input type="text" name="subname_control" autofocus required />
+  <br>Correo electronico:
+  <input type="email" name="email_control" required>
+  <br>Contraseña
+  <input type="password" name="contraseña">
+  <br>Repetir contraseña:
+  <input type="password" name="contraseña" required>
+ <br>Telefono:
+  <input type="tel" name="tel_control">
+  <br>Selecciona tu hooby:
+  <input type="text" name="hooby" id="hooby"
+  list="hoobys">
+  <datalist id="hoobys">
+  <option value="Deporte">
+  <option value="Fiesta">
+  <option value="Musica">
+  <option value="Series">
+  <option value="Otros">
+  </datalist>
+  <br>
+  <input  type="submit" value="Enviar">
+  </form>
+  </fieldset>
+  </body>
+  </html>
