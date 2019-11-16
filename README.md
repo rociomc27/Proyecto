@@ -28,3 +28,11 @@ Si ya tenemos uno, verificamos que la ruta sea correcta.
 Una vez hecho esto, en el estado actual del proyecto hay que añadir la carpeta "src" (tal cual, en minusculas) a la carpeta del proyecto.
 Sin esta carpeta, Eclipse no puede "buildear" el proyecto y no compilará los fragmentos de codigo java además de que quedarán sin carpeta
 ni estructura de archivos.
+
+Por último, puede seguir dando un error con el JRE. Para solucionarlo:
+
+-Click derecho en el proyecto > Java Build Path > Libraries ...
+Aquí habrá que eliminar la biblioteca "JRE System library..." (en caso de que esté dando error)
+Una vez eliminada pulsamos en "Add Library..."> JRE System Library > Installed JREs... > Apply and Close > Finish
+
+Con eso debería bastar para que funcionase todo correctamente.
