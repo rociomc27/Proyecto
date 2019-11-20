@@ -1,4 +1,3 @@
-
 #header_index{
 
 	font-family: Agency FB;
@@ -19,10 +18,7 @@
 	color:white;
 
 }
-form2{
-	display:inline-block;
-	text-align:left;
-}
+
 
 #form_index{
 	margin: 0 auto;
@@ -66,17 +62,52 @@ form2{
 
 }
 
-input2[type=submit]{
-	grid-column: 1/span 2;
-	width: 100px;
-}
-header2 {
-	position: relative;
-	background-color: silver;
-	background-size: 50px;
-	font-size: 50px;
+#enlace_form{
+	
 	color: white;
+	text-decoration:none;
 }
+#fieldset_form{
+    text-align:left;
+    display: inline-block;
+    vertical-align:middle;
+    border: 3px solid #CCC;
+    border-radius: 1em;
+    margin-top:4%;
+}
+
+#body_form {
+    text-align:center;
+    vertical-align:middle;
+    font-family: Agency FB;
+    margin: 5px;
+    background-image: url("../imagen/luna2.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  color:white;
+  background-color: black;
+}
+#form_form {
+    width: 400px;
+    font: normal bold 20px Agency FB;
+
+}
+
+.label_form {
+    display: inline-block;
+    width: 150px;
+}
+
+#crear_usuario {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: 24%;
+
+}
+
+
 #archivos {
 	position: relative;
 	background-color: silver;
