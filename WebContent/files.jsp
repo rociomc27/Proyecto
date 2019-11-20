@@ -6,7 +6,6 @@
 	<meta charset="utf-8">
 	<title>Mis archivos</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 <body>
 	<header id="archivos">Infinity Space</header>
@@ -25,7 +24,11 @@
  		</nav>
 	</div>
 <div>
-	<div class="sidebar"></div>
+	<div class="sidebar">
+		<div class="folder_label">
+			<button class="folder_button">Folder Name</button>
+		</div>
+	</div>
 	<div class="rute">
 		<ul class="breadcrumb">
   			<li><a href="#">Mis Archivos</a></li>

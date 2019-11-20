@@ -49,14 +49,13 @@ form2{
 		border-color: silver;
 		margin-top: 100%;
 		margin-right: 60%;
-		position: relative;
-			
-	}
+		position: relative;		
+}
 
 	#caja_index{
 	font-size: 22px;
 	font-family: Agency FB;
-	}
+}
 
 #enlace_registrarse{
 	font-family: Agency FB;
@@ -167,7 +166,6 @@ header2 {
 	float: right;
 }
 
-
 ul.breadcrumb li {
   display: inline;
   font-size: 14px;
@@ -185,4 +183,16 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
+}
+
+.folder_label {
+	padding: 2px 2px 2px 2px;
+	margin: 5px 10px 2.5px 10px;
+	height: 40px;
+}
+.folder_button {
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	border-color: black;
 }
