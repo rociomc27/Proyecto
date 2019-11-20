@@ -20,7 +20,7 @@
 <body id="body_form">
   <fieldset id="fieldset_form">
   <legend> <h1>Formulario de registro</h1> </legend>
-   <form id="form_form" action="" oninput="range_control_value.value= range_control.valueAdNumber">
+   <form id="form_form" action="Login" method="POST" oninput="range_control_value.value= range_control.valueAdNumber">
     <p>
       <label class="label_form" for="nombre_de_usuario"  >Usuario:</label>
       <input type="text" name="name_control" autofocus required />
