@@ -8,13 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header id="archivos">Infinity Space</header>
+	<header id="archivos">∞ Infinity Space ∞</header>
+	<hr>
 	<div class="toolbar">
+	
 		<nav class="menu">
 			<ul>
 				<li><input id="newfolder" type="button" value="Crear Carpeta"></li>
 				<li><input id="uploadfile" type="button" value="Subir Archivo"></li>
-				<li><a href="#">Fulanito_xD</a>
+				<li><a href="#" id="fulanito">Fulanito_xD</a>
 					<ul id="userlogout">
  						<li id="usereditor"><a href="#"> Editar perfil </a></li>
 						<li id="userout"><a href="index.html"> Cerrar sesión </a></li>
