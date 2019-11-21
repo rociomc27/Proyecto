@@ -109,10 +109,14 @@
 
 #archivos {
 	position: relative;
-	background-color: silver;
-	background-size: 50px;
-	font-size: 50px;
+	background-image: url("../imagen/fondo1.jpg");
+	background-size: 500px;
+	font-size: 100px;
 	color: white;
+	font-family: Agency FB;
+	font-style: italic;
+	text-align: center;
+	
 }
 
 .menu ul {
@@ -137,6 +141,7 @@
 	display: block;
 	padding: 1em;
 	text-decoration: none;
+	
 }
 
 .menu ul li ul {
@@ -159,8 +164,13 @@
 
 .toolbar {
 	background-color:#F2EDC2;
-	height: 40px;
-
+	height: 50px;
+	font-family: Agency FB;
+	font-size: 10px;
+	background-image: url("../imagen/fondo1.jpg");
+	text-decoration: none;
+	color:white;
+	
 }
 
 .rute {
@@ -169,6 +179,7 @@
 	width: 75%;
 	height: 30px;
 	padding-bottom: 1%;
+	font-family: Agency FB;
 }
 
 #newfolder, #uploadfile {
@@ -183,6 +194,8 @@
 	border-color: #15039E;
 	border-width: 2px;
 	box-shadow: 0 5px 5px 0;
+	font-family: Agency FB;
+	
 }
 
 #newfolder:hover {
@@ -226,4 +239,10 @@ ul.breadcrumb li a:hover {
 	height: 100%;
 	background-color: pink;
 	border-color: black;
+}
+#fulanito {
+	color:white;
+	text-align:right;
+	
+	
 }
