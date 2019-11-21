@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="database.LogicBD" %>
+<%@ page import="entity.Archive" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<%
+	//No puedo conectar el tomcat a mi eclipse, aun así dejo aquí el contexto de aplicación
+	//que vamos a tener que usarlo en el proyecto.
+	ServletContext contextoAplicacion = this.getServletContext();
+	LogicBD logicBD = (LogicBD) contextoAplicacion.getAttribute("logicBD");
+%>
 	<header id="archivos">Infinity Space</header>
 	<div class="toolbar">
 		<nav class="menu">
@@ -38,6 +47,17 @@
 		</ul>
 	</div>
 </div>
+<%
+	//Como no puedo generar el proyecto en JPA, no se puede crear las clases de entidad,
+	//asi que los métodos del bucle me los he inventado en base a lo que tenemos en la BBDD.
+	List<Archive> lista = logicBD.obtenerArchivos();
 
+	for (Archive a : lista) { %>
+		<p><%=a.getId()%> -
+		<%=a.getArchiveName()%>.
+		<%=a.getExtension()%></p>
+	<%}
+
+%>
 </body>
 </html>
