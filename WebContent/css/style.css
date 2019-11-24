@@ -1,0 +1,248 @@
+#header_index{
+
+	font-family: Agency FB;
+	font-size: 50px;
+	font-style: italic;
+	color:white;
+	text-align: center;
+}
+#body_index{
+	background-image: url("../imagen/amanecer.jpg.jpg");
+	background-position: 100%;
+	background-repeat: no-repeat;
+
+	}
+.main_frame2{
+	text-align: center;
+	width:100%;
+	color:white;
+
+}
+
+
+#form_index{
+	margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid #CCC;
+    border-radius: 1em;
+    font-size: 20px;
+    text-align: center;
+}
+
+#inicio_sesion{
+	font-family: Agency FB;
+	font-size: 20px;
+}
+
+.marco2 {
+	display: grid;
+	grid-template-columns: 40px 250px;
+	grid-row-gap: 10px;
+	width: fit-content;
+	border:solid;
+	padding: 10px;
+		border-color: silver;
+		margin-top: 100%;
+		margin-right: 60%;
+		position: relative;		
+}
+
+	#caja_index{
+	font-size: 22px;
+	font-family: Agency FB;
+}
+
+#enlace_registrarse{
+	font-family: Agency FB;
+	color: white;
+	font-size: 30px;
+	padding-left: 50px;
+
+}
+
+#enlace_form{
+	
+	color: white;
+	text-decoration:none;
+}
+#fieldset_form{
+    text-align:left;
+    display: inline-block;
+    vertical-align:middle;
+    border: 3px solid #CCC;
+    border-radius: 1em;
+    margin-top:4%;
+}
+
+#body_form {
+    text-align:center;
+    vertical-align:middle;
+    font-family: Agency FB;
+    margin: 5px;
+    background-image: url("../imagen/luna2.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  color:white;
+  background-color: black;
+}
+#form_form {
+    width: 400px;
+    font: normal bold 20px Agency FB;
+
+}
+
+.label_form {
+    display: inline-block;
+    width: 150px;
+}
+
+#crear_usuario {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: 24%;
+
+}
+
+
+#archivos {
+	position: relative;
+	background-image: url("../imagen/fondo1.jpg");
+	background-size: 500px;
+	font-size: 100px;
+	color: white;
+	font-family: Agency FB;
+	font-style: italic;
+	text-align: center;
+	
+}
+
+.menu ul {
+	position: absolute;
+  	list-style: none;
+  	font-size: 0;
+  	display: inline;
+  	padding: 0;
+ 	margin: 0;
+}
+
+.menu li {
+	font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.menu a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	
+}
+
+.menu ul li ul {
+	display: none;
+	background-color: #F2EDC2;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+	display: block;
+}
+
+.sidebar {
+	display: inline-block;
+	background-color: black;
+	width: 25%;
+	height: 1000px;
+	margin-right: 0px;
+	float: left;
+
+}
+
+.toolbar {
+	background-color:#F2EDC2;
+	height: 50px;
+	font-family: Agency FB;
+	font-size: 10px;
+	background-image: url("../imagen/fondo1.jpg");
+	text-decoration: none;
+	color:white;
+	
+}
+
+.rute {
+	display: inline-block;
+	background-color: #F5DB9F;
+	width: 75%;
+	height: 30px;
+	padding-bottom: 1%;
+	font-family: Agency FB;
+}
+
+#newfolder, #uploadfile {
+	float: right;
+	height: 30px;
+	margin-right: 20px;
+	margin-top: 3px;
+	font-size:14px;
+	font-weight: 600;
+	background-color: #0AA3C2;
+	border-radius: 6px;
+	border-color: #15039E;
+	border-width: 2px;
+	box-shadow: 0 5px 5px 0;
+	font-family: Agency FB;
+	
+}
+
+#newfolder:hover {
+	background-color: #FFFFFF;
+}
+
+#uploadfile:hover {
+	background-color: #FFFFFF;
+}
+
+#userlogout {
+	float: right;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+  
+}
+ul.breadcrumb li+li:before {
+  padding: 4px;
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.folder_label {
+	padding: 2px 2px 2px 2px;
+	margin: 5px 10px 2.5px 10px;
+	height: 40px;
+}
+.folder_button {
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	border-color: black;
+}
+#fulanito {
+	color:white;
+	text-align:right;
+	
+	
+}
