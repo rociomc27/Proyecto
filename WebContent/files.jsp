@@ -12,8 +12,6 @@
 </head>
 <body>
 <%
-	//No puedo conectar el tomcat a mi eclipse, aun así dejo aquí el contexto de aplicación
-	//que vamos a tener que usarlo en el proyecto.
 	ServletContext contextoAplicacion = this.getServletContext();
 	LogicBD logicBD = (LogicBD) contextoAplicacion.getAttribute("logicBD");
 %>
@@ -25,7 +23,6 @@
 				<li><input id="uploadfile" type="button" value="Subir Archivo"></li>
 				<li><a href="#">Fulanito_xD</a>
 					<ul id="userlogout">
- 						<li id="usereditor"><a href="#"> Editar perfil </a></li>
 						<li id="userout"><a href="index.html"> Cerrar sesión </a></li>
  					</ul>
  				</li>
@@ -47,17 +44,16 @@
 		</ul>
 	</div>
 </div>
-<%
-	//Como no puedo generar el proyecto en JPA, no se puede crear las clases de entidad,
-	//asi que los métodos del bucle me los he inventado en base a lo que tenemos en la BBDD.
-	List<Archive> lista = logicBD.obtenerArchivos();
+<%= logicBD.toString() %>
 
-	for (Archive a : lista) { %>
-		<p><%=a.getId()%> -
-		<%=a.getArchiveName()%>.
-		<%=a.getExtension()%></p>
-	<%}
+<% List<Archive> lista = logicBD.obtenerArchivos(); %>
 
-%>
+<% for (Archive a : lista) { %>
+	<p>
+	<%= a.getId()%>
+	<%= a.getArchiveName()%>
+	<%=a.getExtension()%>
+	</p>
+<% } %>
 </body>
 </html>
