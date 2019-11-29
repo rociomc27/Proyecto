@@ -1,5 +1,6 @@
 package servlets;
 
+import java.io.File;
 import java.io.IOException;
 
 import javax.persistence.EntityManager;
@@ -23,7 +24,7 @@ import entity.User;
 @WebServlet("/Login")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	LogicBD logicBD;
     
     public Login() {
         super();
@@ -89,6 +90,14 @@ public class Login extends HttpServlet {
 		} else {
 			request.getRequestDispatcher("/files.jsp").forward(request, response);
 		}
+		String username = request.getParameter("user");
+		   //logicBD.checkUser(username)
+		if(false) {//TODO comprobar contraseña desde metodo checkUser
+			File userArchives = new File("C:\\UserArchives\\"+username);
+			
+			request.getRequestDispatcher("/files.jsp").forward(request, response);
+		}
+		
 		
 		/*
 		 *ESTO ES LO QUE HABÍA ANTERIORMETE EN EL METODO DOPOST (ANTES DE QUE YO EMPEZARA A TOQUETEAR),
@@ -110,7 +119,7 @@ public class Login extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
 		ServletContext servletContext = this.getServletContext();
-		LogicBD logicBD = new LogicBD();
+		logicBD = new LogicBD();
 		servletContext.setAttribute("logicBD", logicBD);
 		
 	}
