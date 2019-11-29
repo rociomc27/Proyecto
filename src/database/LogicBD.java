@@ -7,9 +7,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.*;
 import javax.persistence.TypedQuery;
 
-import com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion.User;
+
 
 import entity.Archive;
+import entity.User;
 
 public class LogicBD {
 	
@@ -37,6 +38,19 @@ public class LogicBD {
 		TypedQuery<Archive> query1 = em.createNamedQuery("Archive.findAll", Archive.class);
 		List<Archive> archivos = query1.getResultList();
 		return archivos;
+	}
+	
+	public boolean checkUser(String username) {
+		TypedQuery<User> query = em.createQuery("SELECT u FROM User u WHERE u="+username, User.class);
+		User user = query.getSingleResult();
+		
+		if(user.getUserName().equals(username)) {
+			return true;
+		}else {
+			return false;
+		}
+		
+		
 	}
 
 }
