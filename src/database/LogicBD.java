@@ -40,16 +40,29 @@ public class LogicBD {
 		return archivos;
 	}
 	
-	public boolean checkUser(String username) {
-		TypedQuery<User> query = em.createQuery("SELECT u FROM User u WHERE u="+username, User.class);
-		User user = query.getSingleResult();
+	public boolean comprobarUserPass(String username, String password) {
+		//TypedQuery<User> query2 = em.createQuery("SELECT u FROM User u WHERE u.userName='"+username+"'", User.class);
+		//TypedQuery<User> query3 = em.createQuery("SELECT p FROM User p WHERE p="+password, User.class);
+		//User user = query2.getSingleResult();
+		//User pass = query3.getSingleResult();
 		
-		if(user.getUserName().equals(username)) {
-			return true;
-		}else {
+		User user = em.find(User.class, username);
+		
+		if (user==null) {
+			//System.out.println("Usuario no encontrado");
 			return false;
 		}
-		
+		else {
+			if (user.getUserPass().equals(password)) {
+				//System.out.println("OK user y password");
+				return true;
+			}
+			else {
+				//System.out.println("User encontrado pero password mal");
+				return false;
+			}
+		}
+	
 		
 	}
 

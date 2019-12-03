@@ -91,8 +91,9 @@ public class Login extends HttpServlet {
 			request.getRequestDispatcher("/files.jsp").forward(request, response);
 		}
 		String username = request.getParameter("user");
-		   //logicBD.checkUser(username)
-		if(false) {//TODO comprobar contraseña desde metodo checkUser
+		//String password = request.getParameter("password");
+		   //logicBD.comprobarUserPass(username, password);
+		if(false) {//TODO comprobar contraseña desde metodo checkUserPass
 			File userArchives = new File("C:\\UserArchives\\"+username);
 			
 			request.getRequestDispatcher("/files.jsp").forward(request, response);
