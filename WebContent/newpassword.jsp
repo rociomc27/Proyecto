@@ -21,8 +21,8 @@
 </header>
 <body id="body_password">
 	<fieldset id="fieldset_password">
-		<legend>
-			<h1>Cambiar contraseña</h1>
+		<legend id="legend_titulo">
+			Cambiar contraseña
 		</legend>
 		<form id="form_form" action="ChangePass" method="POST"
 			oninput="range_control_value.value= range_control.valueAdNumber">

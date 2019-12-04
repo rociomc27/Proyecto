@@ -60,6 +60,11 @@
 	padding-left: 50px;
 
 }
+#legend_titulo{
+	font-family: Agency FB;
+	color: white;
+	font-size: 30px;
+}
 
 #enlace_form{
 	
@@ -318,7 +323,7 @@ ul.breadcrumb li a:hover {
 #contenido_archivos{
 	
 }
-#usereditor a{
+#changePass a{
 	background-image: url("../imagen/fondo1.jpg");
 	background-size: cover;
 	color: white;
