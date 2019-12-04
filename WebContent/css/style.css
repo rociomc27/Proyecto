@@ -225,7 +225,26 @@
 	font-family: Agency FB;
 	
 }
-
+#newfolder1{
+	float: right;
+	height: 30px;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-size:18px;
+	font-weight: 600;
+	background-color: #0AA3C2;
+	border-radius: 6px;
+	border-color: #15039E;
+	border-width: 2px;
+	box-shadow: 0 5px 5px 0;
+	font-family: Agency FB;
+	
+	
+	
+}
+#newfolder2:hover {
+	background-color: #FFFFFF;
+}
 #newfolder:hover {
 	background-color: #FFFFFF;
 }
@@ -233,6 +252,14 @@
 #uploadfile:hover {
 	background-color: #FFFFFF;
 }
+#prueba {
+ width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+ }
 
 #userlogout {
 	float: right;

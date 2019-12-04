@@ -24,19 +24,19 @@
 		<legend>
 			<h1>Cambiar contraseña</h1>
 		</legend>
-		<form id="form_form" action="Login" method="POST"
+		<form id="form_form" action="ChangePass" method="POST"
 			oninput="range_control_value.value= range_control.valueAdNumber">
 			<p>
 				<label class="label_form" for="contraseña">Contraseña actual:</label> <input
-					type="password" name="contraseña">
+					type="password" name="contrasenaA">
 			</p>
 			<p>
 				<label class="label_form" for="contraseña">Nueva Contraseña:</label> <input
-					type="password" name="contraseña">
+					type="password" name="contrasenaN">
 			</p>
 			<p>
 				<label class="label_form" for="contraseña">Repetir
-					Contraseña:</label> <input type="password" name="contraseña">
+					Contraseña:</label> <input type="password" name="contrasenaR">
 			</p>
 			<p>
 				<br> <input id="crear_usuario" type="submit"

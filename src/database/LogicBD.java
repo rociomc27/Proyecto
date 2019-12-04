@@ -56,4 +56,21 @@ public class LogicBD {
 			}
 		}
 	}
+	
+	//Hay que cambiar de contraseña. Registrar nuevos usuarios.
+	public boolean cambioContrasena(String username, String password, String newPass) {
+		if (comprobarUserPass(username, password) == true) {
+			User user = em.find(User.class, username);
+			EntityTransaction et = em.getTransaction();
+			et.begin();
+			user.setUserPass(newPass);
+			em.merge(user);
+			et.commit();
+			return true;
+		}else {
+			return false;
+		}
+		
+		
+	}
 }

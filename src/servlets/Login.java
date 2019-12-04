@@ -37,7 +37,6 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		
 		RequestDispatcher rd;
 		HttpSession sesion = request.getSession(true);
 		
@@ -45,7 +44,6 @@ public class Login extends HttpServlet {
 		String password = request.getParameter("password");
 
 		Boolean comprobar = logicBD.comprobarUserPass(username, password);
-		//System.out.println(comprobar);
 		
 		if(comprobar == false) {
 			rd = request.getRequestDispatcher("/index.jsp");
