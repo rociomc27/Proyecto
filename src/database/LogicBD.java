@@ -33,7 +33,7 @@ public class LogicBD {
 		return "Mensaje de LogicBD " + mensaje;
 	}
 
-	//Me creo un método para crear una query que me devuelva una lista de archivos
+	//Método que crea una query con una lista de archivos
 	public List<Archive> obtenerArchivos() {
 		TypedQuery<Archive> query1 = em.createNamedQuery("Archive.findAll", Archive.class);
 		List<Archive> archivos = query1.getResultList();
@@ -41,29 +41,19 @@ public class LogicBD {
 	}
 	
 	public boolean comprobarUserPass(String username, String password) {
-		//TypedQuery<User> query2 = em.createQuery("SELECT u FROM User u WHERE u.userName='"+username+"'", User.class);
-		//TypedQuery<User> query3 = em.createQuery("SELECT p FROM User p WHERE p="+password, User.class);
-		//User user = query2.getSingleResult();
-		//User pass = query3.getSingleResult();
-		
+				
 		User user = em.find(User.class, username);
 		
 		if (user==null) {
-			//System.out.println("Usuario no encontrado");
-			return false;
+			return false; //Usuario no encontrado
 		}
 		else {
 			if (user.getUserPass().equals(password)) {
-				//System.out.println("OK user y password");
-				return true;
+				return true;//Usuario y contraseña correctos
 			}
 			else {
-				//System.out.println("User encontrado pero password mal");
-				return false;
+				return false; //Usuario correcto, contraseña incorrecta
 			}
 		}
-	
-		
 	}
-
 }

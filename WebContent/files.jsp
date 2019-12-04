@@ -13,6 +13,12 @@
 </head>
 <body id="body_archivos">
 <%
+	String n = request.getParameter("user");
+	if (n==null) {
+		HttpSession sesion = request.getSession(true);
+		n = (String) sesion.getAttribute("user");
+	}
+	
 	ServletContext contextoAplicacion = this.getServletContext();
 	LogicBD logicBD = (LogicBD) contextoAplicacion.getAttribute("logicBD");
 %>
@@ -24,7 +30,7 @@
 				<li><input id="uploadfile" type="button" value="Subir Archivo"></li>
 				<li><a id="fulanito" href="#">Fulanito_xD</a>
 					<ul id="userlogout">
-					 <li id="userout"><a href="<%= request.getRequestDispatcher("/Logout.java") %>"> Cerrar sesión </a></li>
+					 <li id="userout"><a href="Logout"> Cerrar sesión </a></li>
  					</ul>
  				</li>
  			</ul>
@@ -46,7 +52,6 @@
 	</div>
 </div>
 <div id="contenido_archivos">
-<%= logicBD.toString() %>
 
 <% List <Archive> lista = logicBD.obtenerArchivos(); %>
 <% for (Archive a: lista) { %>
