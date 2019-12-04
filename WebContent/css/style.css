@@ -60,6 +60,11 @@
 	padding-left: 50px;
 
 }
+#legend_titulo{
+	font-family: Agency FB;
+	color: white;
+	font-size: 30px;
+}
 
 #enlace_form{
 	
@@ -86,6 +91,28 @@
   color:white;
   background-color: black;
 }
+
+#body_password {
+    text-align:center;
+    vertical-align:middle;
+    font-family: Agency FB;
+    margin: 5px;
+    background-image: url("../imagen/sol1.jpg");
+ 
+  background-repeat: no-repeat;
+  color:white;
+  background-color: black;
+  background-size: cover;
+}
+#fieldset_password{
+    text-align:left;
+    display: inline-block;
+    vertical-align:middle;
+    border: 3px solid #CCC;
+    border-radius: 1em;
+    margin-top:10%;
+}
+
 #form_form {
     width: 400px;
     font: normal bold 20px Agency FB;
@@ -105,6 +132,7 @@
     margin-left: 24%;
 
 }
+
 
 
 #archivos {
@@ -202,7 +230,26 @@
 	font-family: Agency FB;
 	
 }
-
+#newfolder1{
+	float: right;
+	height: 30px;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-size:18px;
+	font-weight: 600;
+	background-color: #0AA3C2;
+	border-radius: 6px;
+	border-color: #15039E;
+	border-width: 2px;
+	box-shadow: 0 5px 5px 0;
+	font-family: Agency FB;
+	
+	
+	
+}
+#newfolder2:hover {
+	background-color: #FFFFFF;
+}
 #newfolder:hover {
 	background-color: #FFFFFF;
 }
@@ -210,6 +257,14 @@
 #uploadfile:hover {
 	background-color: #FFFFFF;
 }
+#prueba {
+ width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+ }
 
 #userlogout {
 	float: right;
@@ -268,7 +323,7 @@ ul.breadcrumb li a:hover {
 #contenido_archivos{
 	
 }
-#usereditor a{
+#changePass a{
 	background-image: url("../imagen/fondo1.jpg");
 	background-size: cover;
 	color: white;

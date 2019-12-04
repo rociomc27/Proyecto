@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import explorer.InnerExplorer;
 
 
 import database.LogicBD;
@@ -37,7 +38,6 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		
 		RequestDispatcher rd;
 		HttpSession sesion = request.getSession(true);
 		
@@ -45,13 +45,13 @@ public class Login extends HttpServlet {
 		String password = request.getParameter("password");
 
 		Boolean comprobar = logicBD.comprobarUserPass(username, password);
-		//System.out.println(comprobar);
 		
 		if(comprobar == false) {
 			rd = request.getRequestDispatcher("/index.jsp");
 		} else {
 			rd = request.getRequestDispatcher("/files.jsp");
 			sesion.setAttribute("user", username);
+			sesion.setAttribute("mainRoute", InnerExplorer.getMainRoute(username));
 		}
 		
 		rd.forward(request, response);

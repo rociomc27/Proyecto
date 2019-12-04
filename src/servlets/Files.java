@@ -7,6 +7,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import explorer.InnerExplorer;
 
 /**
  * Servlet implementation class Files
@@ -20,14 +23,16 @@ public class Files extends HttpServlet {
      */
     public Files() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		HttpSession session = request.getSession();
+		File actualRoute = InnerExplorer.getMainRoute((String) session.getAttribute("user"));
+		actualRoute = new File(actualRoute.toString()+"\\"+request.getParameter("route"));
+		session.setAttribute("fullRoute", actualRoute);
 		
 	}
 
@@ -35,7 +40,6 @@ public class Files extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
