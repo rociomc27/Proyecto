@@ -36,6 +36,7 @@
 				<li><input id="uploadfile" type="submit" value="Subir archivo" /></li>
 				<li><a id="fulanito" href="#">Fulanito_xD</a>
 					<ul id="userlogout">
+						<li id="changePass"><a href="newpassword.jsp"> Cambiar contraseña </a>
 						<li id="userout"><a href="Logout"> Cerrar sesión </a></li>
 					</ul></li>
 			</ul>
