@@ -8,7 +8,7 @@ public class InnerExplorer {
 		
 		
 		public static void main(String[] args) {
-			File userRoute = getMainRoute("usuario3");
+			File userRoute = getMainRoute("admin");
 			System.out.println(userRoute);
 			for(String n : userRoute.list()) {
 				System.out.println(n);

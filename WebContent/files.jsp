@@ -43,11 +43,8 @@
 		</nav>
 	</div>
 	<div>
-		<div class="sidebar">
-			<div class="folder_label">
-				<button class="folder_button">Folder Name</button>
-
-			</div>
+		<div id="sidebar" class="sidebar">
+			
 		</div>
 		<div class="rute">
 			<ul class="breadcrumb">
