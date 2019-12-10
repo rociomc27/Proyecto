@@ -296,10 +296,26 @@ ul.breadcrumb li a:hover {
 	height: 40px;
 
 }
+.file_label {
+	padding: 2px 2px 2px 2px;
+	margin: 5px 10px 2.5px 10px;
+	height: 40px;
+
+}
 .folder_button {
 	width: 100%;
 	height: 100%;
 	background-image: url("../imagen/marte2.jpg");
+	border-color: white;
+	font-size: 20px;
+	font-family: Agency FB;
+	font-weight: bold;
+
+}
+.file_button {
+	width: 100%;
+	height: 100%;
+	background-color: #e0c899;
 	border-color: white;
 	font-size: 20px;
 	font-family: Agency FB;
@@ -321,6 +337,12 @@ ul.breadcrumb li a:hover {
 	font-size: 18px;
 }
 #contenido_archivos{
+	display: inline-block;
+	
+	width: 74%;
+	height: 40px;
+	padding-bottom: 1%;
+	font-family: Agency FB;
 	
 }
 #changePass a{

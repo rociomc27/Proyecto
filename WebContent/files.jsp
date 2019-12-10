@@ -10,7 +10,6 @@
 <meta charset="utf-8">
 <title>Mis archivos</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body id="body_archivos">
 	<%
@@ -44,7 +43,9 @@
 	</div>
 	<div>
 		<div id="sidebar" class="sidebar">
-			
+			<div class="folder_label">
+			<button class="folder_button">Cumpleaños Maria</button>
+		</div>
 		</div>
 		<div class="rute">
 			<ul class="breadcrumb">
@@ -57,20 +58,15 @@
 	</div>
 	<div id="contenido_archivos">
 
-		<%
-			List<Archive> lista = logicBD.obtenerArchivos();
-		%>
-		<%
-			for (Archive a : lista) {
-		%>
-		<p>
-			<%=a.getId()%>
-			<%=a.getArchiveName()%>
-			<%=a.getExtension()%>
-		</p>
-		<%
-			}
-		%>
+		<div class="file_label">
+			<button class="file_button">img_001</button>
+		</div>
+		<div class="file_label">
+			<button class="file_button">img_002</button>
+		</div>
+		<div class="file_label">
+			<button class="file_button">img_003</button>
+		</div>
 	</div>
 </body>
 </html>
