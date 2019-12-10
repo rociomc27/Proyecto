@@ -34,7 +34,7 @@
 					style='display: none;' />
 					<div id="info"></div>
 				<li><input id="uploadfile" type="submit" value="Subir archivo" /></li>
-				<li><a id="fulanito" href="#">Fulanito_xD</a>
+				<li><a id="fulanito" href="#"><%= n %></a>
 					<ul id="userlogout">
 						<li id="changePass"><a href="newpassword.jsp"> Cambiar contraseña </a>
 						<li id="userout"><a href="Logout"> Cerrar sesión </a></li>

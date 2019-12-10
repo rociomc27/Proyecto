@@ -77,4 +77,10 @@ public class User implements Serializable {
 		return archive;
 	}
 
+	@Override
+	public String toString() {
+		return "User [userName=" + userName + ", email=" + email + ", userPass=" + userPass + ", archives=" + archives
+				+ "]";
+	}
+
 }

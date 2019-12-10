@@ -70,7 +70,21 @@ public class LogicBD {
 		}else {
 			return false;
 		}
-		
-		
+	}
+	
+	//INSERT INTO USERS VALUES ('admin2', 'admin', 'admin2@admin.com');
+	public void registUser(String username, String password, String email) {
+		User user = em.find(User.class, username);
+		if(user==null){
+			user = new User();
+			EntityTransaction et = em.getTransaction();
+			et.begin();
+			user.setUserName(username);
+			user.setUserPass(password);
+			user.setEmail(email);
+			em.merge(user);
+			et.commit();
+		}
+		//TypedQuery<User> nose = em.createNamedQuery("User.findAll", User.class);
 	}
 }

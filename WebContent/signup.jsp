@@ -20,10 +20,10 @@
 <body id="body_form">
   <fieldset id="fieldset_form">
   <legend id="legend_titulo"> Formulario de registro </legend>
-   <form id="form_form" action="Login" method="POST" oninput="range_control_value.value= range_control.valueAdNumber">
+   <form id="form_form" action="Signup" method="POST" oninput="range_control_value.value= range_control.valueAdNumber">
     <p>
       <label class="label_form" for="nombre_de_usuario"  >Usuario:</label>
-      <input type="text" name="name_control" autofocus required />
+      <input type="text" name="user_name" autofocus required />
    </p>
    <p>
       <label class="label_form"for="Nombre"  >Nombre:</label>
@@ -39,11 +39,11 @@
    </p>
    <p>
       <label class="label_form" for="contraseña"  >Contraseña:</label>
-     <input type="password" name="contraseña">
+     <input type="password" name="contrasena">
    </p>
    <p>
       <label class="label_form" for="contraseña"  >Repetir Contraseña:</label>
-     <input type="password" name="contraseña">
+     <input type="password">
    </p>
    <p><br>
   <input id="crear_usuario" type="submit" value="∞ Crear Usuario ∞">
